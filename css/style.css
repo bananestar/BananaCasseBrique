@@ -1,28 +1,61 @@
 :root {
-    --color-main: #778899;
-    --color-black: #000000;
-  
-    --font-title: Montserrat, sans-serif;
-    --font-body: Arial, sans-serif;
-  }
-  
-  body {
-    margin: 0;
-    box-sizing: border-box;
-    background-color: var(--color-main);
-  }
-  
-  .container {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: var(--font-body);
-  }
-  
-  .title {
-    color: var(--color-black);
-    text-align: center;
-    font-family: var(--font-title);
-  }
+  --color-main: #778899;
+  --color-black: #000000;
+  --color-block: #4b17f9;
+  --color-user : rgb(62, 0, 128);
+  --font-title: Montserrat, sans-serif;
+  --font-body: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: var(--color-main);
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-body);
+}
+
+.title {
+  color: var(--color-black);
+  text-align: center;
+  font-family: var(--font-title);
+}
+
+.grid {
+  position: absolute;
+  width: 562px;
+  height: 300px;
+  left:0;
+  right:0;
+  margin:0 auto;
+  border: solid black 1px;
+}
+
+.block{
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  background-color: var(--color-block);
+}
+
+.user{
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  background-color: var(--color-user);
+}
+
+.ball{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: red;
+}
